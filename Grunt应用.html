@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="Tahoma" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/271363 (zh-CN); Windows/6.1.7601 Service Pack 1;"/>
+  <style>
+    body, td {
+      font-family: Tahoma;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="532"/>
+
+<div><div lang="v2" style="line-height:1.6;"><del style="position:relative;display:block"><a href="http://maxiang.info/#/?provider=evernote_int&guid=450561a6-fff2-4e94-969b-77234c5d0366" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -30px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;"></a></del><div style="line-height: 1.6; font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, SimSun, WenQuanYi Micro Hei, Microsoft YaHei, sans-serif;"><h1 style="font-size: 36px; margin: 0.67em 0; font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, Microsoft YaHei, WenQuanYi Micro Hei, SimSun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 0px; margin-bottom: 20px;">Grunt应用</h1>
+<hr style="-moz-box-sizing: content-box; box-sizing: content-box; height: 0; line-height: 1.6; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid rgba(102, 128, 153, 0.15);"/>
+<h2 style="font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, Microsoft YaHei, WenQuanYi Micro Hei, SimSun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 30px; margin-bottom: 20px; font-size: 30px;">介绍</h2>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">gruntjs是一个基于nodejs的自动化工具</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;"><a href="http://gruntjs.com/" style="background: transparent;" target="_blank">Gruntjs官网</a></p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;"><a href="http://gruntjs.com/getting-started" style="background: transparent;" target="_blank">Getting Start</a></p>
+<h2 style="font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, Microsoft YaHei, WenQuanYi Micro Hei, SimSun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 30px; margin-bottom: 20px; font-size: 30px;">安装</h2>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">安装nodejs, nodejs安装包<br/><a href="http://nodejs.org/dist/v0.10.28/node-v0.10.28-x86.msi" style="background: transparent;" target="_blank">(32-bit)</a>, <a href="http://nodejs.org/dist/v0.10.28/x64/node-v0.10.28-x64.msi" style="background: transparent;" target="_blank">(64-bit)</a></p>
+</li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">安装gruntjs</p>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;">npm install -g grunt-cli</p>
+</blockquote></li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">定位到你项目目录 </p>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;">cd d:\www\branches\applepc\ios_v2</p>
+</blockquote></li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">初始化，根据提示输入项目信息，初始化完成后，会自动生成package.json文件</p>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;">npm init</p>
+</blockquote></li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">项目根目录，添加Gruntfile.js（文件名<code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">区分</code>大小写）, Gruntfile.js内容基本结构如下：</p>
+<pre style="overflow: initial; font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 14px; display: block; padding: 0; margin: 0 0 10px; line-height: 1.6; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: none; border-radius: 0; white-space: pre-wrap;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: inherit; padding: 0.5em; color: #f8f8f2; background-color: transparent; white-space: pre-wrap; border-radius: 0; display: block; background: #23241f;">  <span style="color: #e6db74;">module</span>.exports = <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">(grunt)</span> </span>{
+      grunt.initConfig({
+
+      });
+
+      grunt.loadNpmTasks(<span style="color: #e6db74;">'grunt-contrib-uglify'</span>);
+
+      grunt.registerTask(<span style="color: #e6db74;">'default'</span>, [<span style="color: #e6db74;">'uglify'</span>]);
+
+  }
+</code></pre>
+</li>
+</ul>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">通过npm install 安装你需要的插件, 例如</p>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;">npm install grunt-contrib-copy</p>
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;">npm install grunt-contrib-watch</p>
+</blockquote></li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">回到Gruntfile.js中，为新安装的插件添加任务</p>
+<pre style="overflow: initial; font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 14px; display: block; padding: 0; margin: 0 0 10px; line-height: 1.6; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: none; border-radius: 0; white-space: pre-wrap;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: inherit; padding: 0.5em; color: #f8f8f2; background-color: transparent; white-space: pre-wrap; border-radius: 0; display: block; background: #23241f;">  <span style="color: #e6db74;">module</span>.exports = <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">(grunt)</span> </span>{
+      grunt.initConfig({
+         copy:{<span style="color: #75715e;">//配置copy任务，详细配置信息，请参考grunt-contrib-copy github页</span>
+              main:{
+                  files:[
+                      {
+                          cwd: <span style="color: #e6db74;">'common/tpl/appDetails/compiled/'</span>,
+                          src: <span style="color: #e6db74;">'template.js'</span>,
+                          dest: <span style="color: #e6db74;">'common/js/bcvy6gt37&amp;[8fgt4!3$8gfg82799/'</span>,
+                          expand: <span style="color: #ae81ff;">true</span>,
+                          rename : <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">(dest, src)</span></span>{
+                              <span style="color: #F92672;">return</span> dest + <span style="color: #e6db74;">&quot;appDetailsTpl.js&quot;</span>;
+                          }
+                      }
+                  ]
+              }
+          }
+      });
+
+      grunt.loadNpmTasks(<span style="color: #e6db74;">'grunt-contrib-uglify'</span>);
+      grunt.loadNpmTasks(<span style="color: #e6db74;">'grunt-contrib-copy'</span>);<span style="color: #75715e;">//加载任务</span>
+
+      grunt.registerTask(<span style="color: #e6db74;">'default'</span>, [<span style="color: #e6db74;">'uglify'</span>]);
+      grunt.registerTask(<span style="color: #e6db74;">'copy'</span>, [<span style="color: #e6db74;">'copy'</span>]);<span style="color: #75715e;">//注册复制任务</span>
+
+  }
+</code></pre>
+</li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">运行<code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt copy</code>就可以执行复制任务</p>
+</li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">自定义任务, grunt支持自定义任务，以腾讯tmod为例，请参考下面代码片段, 运行<code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt ct</code>可执行simple ArtTemaplte模板预编译</p>
+<pre style="overflow: initial; font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 14px; display: block; padding: 0; margin: 0 0 10px; line-height: 1.6; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: none; border-radius: 0; white-space: pre-wrap;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: inherit; padding: 0.5em; color: #f8f8f2; background-color: transparent; white-space: pre-wrap; border-radius: 0; display: block; background: #23241f;">  <span style="color: #e6db74;">module</span>.exports = <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">(grunt)</span> </span>{
+      grunt.initConfig({
+         copy:{<span style="color: #75715e;">//配置copy任务，详细配置信息，请参考grunt-contrib-copy github页</span>
+              main:{
+                  files:[
+                      {
+                          cwd: <span style="color: #e6db74;">'common/tpl/appDetails/compiled/'</span>,
+                          src: <span style="color: #e6db74;">'template.js'</span>,
+                          dest: <span style="color: #e6db74;">'common/js/bcvy6gt37&amp;[8fgt4!3$8gfg82799/'</span>,
+                          expand: <span style="color: #ae81ff;">true</span>,
+                          rename : <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">(dest, src)</span></span>{
+                              <span style="color: #F92672;">return</span> dest + <span style="color: #e6db74;">&quot;appDetailsTpl.js&quot;</span>;
+                          }
+                      }
+                  ]
+              }
+          }
+      });
+
+      grunt.registerTask(<span style="color: #e6db74;">'ct'</span>, <span style="color: #e6db74;">'complie template'</span>, <span style="color: #F92672;"><span style="color: #66d9ef;">function</span><span style="color: #f8f8f2;">()</span> </span>{
+          <span style="color: #F92672;">var</span> TmodJS = <span style="color: #e6db74;">require</span>(<span style="color: #e6db74;">&quot;tmodjs&quot;</span>);
+          <span style="color: #F92672;">var</span> path = <span style="color: #e6db74;">'./common/tpl/appDetails/'</span>;
+          <span style="color: #F92672;">var</span> options = {
+              output: <span style="color: #e6db74;">'compiled'</span>,
+              helpers:<span style="color: #e6db74;">'helpers.js'</span>,
+              charset: <span style="color: #e6db74;">'utf-8'</span>,
+              debug: <span style="color: #ae81ff;">false</span> <span style="color: #75715e;">// 此字段不会保存在配置中</span>
+          }
+          TmodJS.init(path, options);
+          TmodJS.compile([], <span style="color: #ae81ff;">true</span>);
+      });
+
+      grunt.loadNpmTasks(<span style="color: #e6db74;">'grunt-contrib-uglify'</span>);
+      grunt.loadNpmTasks(<span style="color: #e6db74;">'grunt-contrib-copy'</span>);<span style="color: #75715e;">//加载任务</span>
+
+      grunt.registerTask(<span style="color: #e6db74;">'default'</span>, [<span style="color: #e6db74;">'uglify'</span>]);
+      grunt.registerTask(<span style="color: #e6db74;">'copy'</span>, [<span style="color: #e6db74;">'copy'</span>]);<span style="color: #75715e;">//注册复制任务</span>
+
+  }
+</code></pre>
+</li>
+</ul>
+<h2 style="font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, Microsoft YaHei, WenQuanYi Micro Hei, SimSun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 30px; margin-bottom: 20px; font-size: 30px;">常见插件</h2>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt-contrib-uglify</code> 文件压缩工具 （<a href="https://github.com/gruntjs/grunt-contrib-uglify" style="background: transparent;" target="_blank">github</a>）</li>
+<li style="line-height: 1.6;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt-contrib-copy</code> 文件复制  （<a href="https://github.com/gruntjs/grunt-contrib-copy" style="background: transparent;" target="_blank">github</a>）</li>
+<li style="line-height: 1.6;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt-css-sprite</code> 从css文件中提取图片，生成雪碧图 (<a href="https://github.com/laoshu133/grunt-css-sprite" style="background: transparent;" target="_blank">github</a>)</li>
+<li style="line-height: 1.6;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px;">grunt-contrib-watch</code> 检测文件变化，然后执行相应的任务 (<a href="https://github.com/gruntjs/grunt-contrib-copy" style="background: transparent;" target="_blank">github</a>)</li>
+<li style="line-height: 1.6;">更多插件，请参考官网(<a href="http://gruntjs.com/plugins" style="background: transparent;" target="_blank">Grunt.js官网插件页</a>)</li>
+</ul>
+</div><center style="display:none">Grunt%u5E94%u7528%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A***%0A%23%23%u4ECB%u7ECD%0Agruntjs%u662F%u4E00%u4E2A%u57FA%u4E8Enodejs%u7684%u81EA%u52A8%u5316%u5DE5%u5177%0A%0A%5BGruntjs%u5B98%u7F51%5D%28http%3A//gruntjs.com/%29%0A%0A%5BGetting%20Start%5D%28http%3A//gruntjs.com/getting-started%29%0A%0A%23%23%u5B89%u88C5%0A*%20%u5B89%u88C5nodejs%2C%20nodejs%u5B89%u88C5%u5305%0A%5B%2832-bit%29%5D%28http%3A//nodejs.org/dist/v0.10.28/node-v0.10.28-x86.msi%29%2C%20%5B%2864-bit%29%5D%28http%3A//nodejs.org/dist/v0.10.28/x64/node-v0.10.28-x64.msi%29%0A%0A*%20%u5B89%u88C5gruntjs%0A%20%20%20%20%3Enpm%20install%20-g%20grunt-cli%0A%0A*%20%u5B9A%u4F4D%u5230%u4F60%u9879%u76EE%u76EE%u5F55%20%0A%20%20%20%20%3E%20cd%20d%3A%5Cwww%5Cbranches%5Capplepc%5Cios_v2%0A%0A*%20%u521D%u59CB%u5316%uFF0C%u6839%u636E%u63D0%u793A%u8F93%u5165%u9879%u76EE%u4FE1%u606F%uFF0C%u521D%u59CB%u5316%u5B8C%u6210%u540E%uFF0C%u4F1A%u81EA%u52A8%u751F%u6210package.json%u6587%u4EF6%0A%20%20%20%20%3Enpm%20init%0A%0A*%20%u9879%u76EE%u6839%u76EE%u5F55%uFF0C%u6DFB%u52A0Gruntfile.js%uFF08%u6587%u4EF6%u540D%60%u533A%u5206%60%u5927%u5C0F%u5199%uFF09%2C%20Gruntfile.js%u5185%u5BB9%u57FA%u672C%u7ED3%u6784%u5982%u4E0B%uFF1A%0A%20%20%20%20%60%60%60%0A%20%20%20%20module.exports%20%3D%20function%28grunt%29%20%7B%0A%20%20%20%20%20%20%20%20grunt.initConfig%28%7B%0A%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.loadNpmTasks%28%27grunt-contrib-uglify%27%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27default%27%2C%20%5B%27uglify%27%5D%29%3B%0A%20%20%20%20%0A%20%20%20%20%7D%0A%60%60%60%0A%20%20%20%20%0A%0A*%20%u901A%u8FC7npm%20install%20%u5B89%u88C5%u4F60%u9700%u8981%u7684%u63D2%u4EF6%2C%20%u4F8B%u5982%0A%0A%20%20%20%20%3Enpm%20install%20grunt-contrib-copy%0A%0A%20%20%20%20%3Enpm%20install%20grunt-contrib-watch%0A%0A*%20%u56DE%u5230Gruntfile.js%u4E2D%uFF0C%u4E3A%u65B0%u5B89%u88C5%u7684%u63D2%u4EF6%u6DFB%u52A0%u4EFB%u52A1%0A%60%60%60%0A%20%20%20%20module.exports%20%3D%20function%28grunt%29%20%7B%0A%20%20%20%20%20%20%20%20grunt.initConfig%28%7B%0A%20%20%20%20%20%20%20%20%20%20%20copy%3A%7B//%u914D%u7F6Ecopy%u4EFB%u52A1%uFF0C%u8BE6%u7EC6%u914D%u7F6E%u4FE1%u606F%uFF0C%u8BF7%u53C2%u8003grunt-contrib-copy%20github%u9875%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20main%3A%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20files%3A%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20cwd%3A%20%27common/tpl/appDetails/compiled/%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20src%3A%20%27template.js%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dest%3A%20%27common/js/bcvy6gt37%26%5B8fgt4%213%248gfg82799/%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20expand%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rename%20%3A%20function%28dest%2C%20src%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20dest%20+%20%22appDetailsTpl.js%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.loadNpmTasks%28%27grunt-contrib-uglify%27%29%3B%0A%20%20%20%20%20%20%20%20grunt.loadNpmTasks%28%27grunt-contrib-copy%27%29%3B//%u52A0%u8F7D%u4EFB%u52A1%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27default%27%2C%20%5B%27uglify%27%5D%29%3B%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27copy%27%2C%20%5B%27copy%27%5D%29%3B//%u6CE8%u518C%u590D%u5236%u4EFB%u52A1%0A%20%20%20%20%0A%20%20%20%20%7D%0A%60%60%60%0A%0A*%20%u8FD0%u884C%60grunt%20copy%60%u5C31%u53EF%u4EE5%u6267%u884C%u590D%u5236%u4EFB%u52A1%0A%0A*%20%u81EA%u5B9A%u4E49%u4EFB%u52A1%2C%20grunt%u652F%u6301%u81EA%u5B9A%u4E49%u4EFB%u52A1%uFF0C%u4EE5%u817E%u8BAFtmod%u4E3A%u4F8B%uFF0C%u8BF7%u53C2%u8003%u4E0B%u9762%u4EE3%u7801%u7247%u6BB5%2C%20%u8FD0%u884C%60grunt%20ct%60%u53EF%u6267%u884Csimple%20ArtTemaplte%u6A21%u677F%u9884%u7F16%u8BD1%0A%60%60%60%0A%20%20%20%20module.exports%20%3D%20function%28grunt%29%20%7B%0A%20%20%20%20%20%20%20%20grunt.initConfig%28%7B%0A%20%20%20%20%20%20%20%20%20%20%20copy%3A%7B//%u914D%u7F6Ecopy%u4EFB%u52A1%uFF0C%u8BE6%u7EC6%u914D%u7F6E%u4FE1%u606F%uFF0C%u8BF7%u53C2%u8003grunt-contrib-copy%20github%u9875%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20main%3A%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20files%3A%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20cwd%3A%20%27common/tpl/appDetails/compiled/%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20src%3A%20%27template.js%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dest%3A%20%27common/js/bcvy6gt37%26%5B8fgt4%213%248gfg82799/%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20expand%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rename%20%3A%20function%28dest%2C%20src%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20dest%20+%20%22appDetailsTpl.js%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27ct%27%2C%20%27complie%20template%27%2C%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20TmodJS%20%3D%20require%28%22tmodjs%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20path%20%3D%20%27./common/tpl/appDetails/%27%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20options%20%3D%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20output%3A%20%27compiled%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20helpers%3A%27helpers.js%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20charset%3A%20%27utf-8%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20debug%3A%20false%20//%20%u6B64%u5B57%u6BB5%u4E0D%u4F1A%u4FDD%u5B58%u5728%u914D%u7F6E%u4E2D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20TmodJS.init%28path%2C%20options%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20TmodJS.compile%28%5B%5D%2C%20true%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.loadNpmTasks%28%27grunt-contrib-uglify%27%29%3B%0A%20%20%20%20%20%20%20%20grunt.loadNpmTasks%28%27grunt-contrib-copy%27%29%3B//%u52A0%u8F7D%u4EFB%u52A1%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27default%27%2C%20%5B%27uglify%27%5D%29%3B%0A%20%20%20%20%20%20%20%20grunt.registerTask%28%27copy%27%2C%20%5B%27copy%27%5D%29%3B//%u6CE8%u518C%u590D%u5236%u4EFB%u52A1%0A%20%20%20%20%0A%20%20%20%20%7D%0A%60%60%60%0A%0A%23%23%u5E38%u89C1%u63D2%u4EF6%0A%0A*%20%60grunt-contrib-uglify%60%20%u6587%u4EF6%u538B%u7F29%u5DE5%u5177%20%uFF08%5Bgithub%5D%28https%3A//github.com/gruntjs/grunt-contrib-uglify%29%uFF09%0A*%20%60grunt-contrib-copy%60%20%u6587%u4EF6%u590D%u5236%20%20%uFF08%5Bgithub%5D%28https%3A//github.com/gruntjs/grunt-contrib-copy%29%uFF09%0A*%20%60grunt-css-sprite%60%20%u4ECEcss%u6587%u4EF6%u4E2D%u63D0%u53D6%u56FE%u7247%uFF0C%u751F%u6210%u96EA%u78A7%u56FE%20%28%5Bgithub%5D%28https%3A//github.com/laoshu133/grunt-css-sprite%29%29%0A*%20%60grunt-contrib-watch%60%20%u68C0%u6D4B%u6587%u4EF6%u53D8%u5316%uFF0C%u7136%u540E%u6267%u884C%u76F8%u5E94%u7684%u4EFB%u52A1%20%28%5Bgithub%5D%28https%3A//github.com/gruntjs/grunt-contrib-copy%29%29%0A*%20%u66F4%u591A%u63D2%u4EF6%uFF0C%u8BF7%u53C2%u8003%u5B98%u7F51%28%5BGrunt.js%u5B98%u7F51%u63D2%u4EF6%u9875%5D%28http%3A//gruntjs.com/plugins%29%29%0A</center><br/></div>
+</div></body></html> 
