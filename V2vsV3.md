@@ -41,10 +41,11 @@
 ![新版资源比例对比](images/compare.jpg?raw=true)
 
 ####页面加载时间对比####
+
  |        | 新版  | 旧版             |   增长比例|
  |------- |-------| ---------------- |  -------  |
- |load    | 1.32s | 747ms       |  76.7% |
- |DOMContentLoaded | 636ms | 609ms | 4.4%|
+ |load    | 1.32s | 747ms            |  76.7%    |
+ |DOMContentLoaded | 636ms | 609ms   |  4.4%     |
  
  * load 页面所有资源下载完毕
  * DOMContentLoaded DOM文档加载完毕
