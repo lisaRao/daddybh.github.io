@@ -177,12 +177,12 @@ perfect for data-intensive real-time applications that run across distributed de
 * 更多插件，请参考官网([Grunt.js官网插件页](http://gruntjs.com/plugins))
 
 
-##Gruntjs vs (Gulp)[http://gulpjs.com/]
+##Gruntjs vs (gulp)[http://gulpjs.com/]
 
 * Gruntjs配置难度高
-* 任务配置不同，Gruntjs基于配置，Gulp基于代码
-* Gulp 接口更优雅
-* Gulp生态系统不如Grunt，日常使用应该足够
+* 任务配置不同，Gruntjs基于配置，gulp基于代码
+* gulp接口更优雅
+* gulp生态系统不如Grunt，日常使用应该足够
 * Grunt的I/O操作是瓶颈，适用小项目
 
 
@@ -191,4 +191,4 @@ perfect for data-intensive real-time applications that run across distributed de
 
 [presentation build wars gulp vs grunt](http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/)
 
-[Gruntjs vs Gulpjs](http://jaysoo.ca/2014/01/27/gruntjs-vs-gulpjs/)
+[Gruntjs vs gulpjs](http://jaysoo.ca/2014/01/27/gruntjs-vs-gulpjs/)
